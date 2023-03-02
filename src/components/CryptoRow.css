@@ -1,0 +1,36 @@
+.Container{
+    display: flex;
+    border: 1px solid grey;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+.CoinName{
+    display: flex;
+    
+    
+}
+.CoinName img{
+   width: 25px;
+   height: 25px;
+}
+
+.CoinSymbol{
+    display: flex;
+    
+}
+
+.CurrentPrice{
+
+}
+.HourPercent{
+
+}
+
+.DayPercent{
+
+}
+.FourHrpercent{
+
+}
