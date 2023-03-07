@@ -1,8 +1,10 @@
 .Container{
     display: flex;
+    padding: 1em;
     border: 1px solid grey;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: center;
     
 }
 
@@ -12,8 +14,9 @@
     
 }
 .CoinName img{
-   width: 25px;
-   height: 25px;
+   width: 18px;
+   height: auto;
+   margin-left: 2em;
 }
 
 .CoinSymbol{
@@ -22,15 +25,15 @@
 }
 
 .CurrentPrice{
-
+    display: flex;
 }
 .HourPercent{
-
+    display: flex;
 }
 
 .DayPercent{
-
+    display: flex;
 }
 .FourHrpercent{
-
+    display: flex;
 }
