@@ -9,31 +9,86 @@
 }
 
 .CoinName{
-    display: flex;
-    
+   min-width: 125px;
+    margin-left: 2em;
     
 }
-.CoinName img{
+.CoinImg img{
    width: 18px;
    height: auto;
-   margin-left: 2em;
+   
+}
+
+.CoinImg{
+    width: 18px;
+    margin-left: 2em;
 }
 
 .CoinSymbol{
-    display: flex;
+   min-width: 40px;
+    margin-left: 2em;
     
 }
 
 .CurrentPrice{
-    display: flex;
+    min-width: 150px;
+    margin-left: 2em;
+    text-align: right;
+    flex: 1;
 }
 .HourPercent{
-    display: flex;
+    min-width: 50px;
+    margin-left: 2em;
+    text-align: right;
+   flex: 1;
 }
 
 .DayPercent{
-    display: flex;
+    min-width: 50px;
+    margin-left: 1em;
+    text-align: right;
+    flex: 1;
 }
-.FourHrpercent{
+.D7percent{
+    min-width: 50px;
+    margin-left: 1em;
+    text-align: right;
+    flex: 1;
+    
+}
+
+.Volume{
+    min-width: 150px;
+    margin-left: 1em;
+    flex: 1;
+    
+}
+
+.MarketCap{
+    min-width: 150px;
+    margin-left: 1em;
+    flex: 1;
+   
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .MarketCap{
+        display: none;
+    }
+
+    .Volume{
+        display: none;
+    }
+}
+.chart{
+    margin-left: 1em;
+    min-width: 130px;
+    flex: 1;
+}
+.CoinMc{
     display: flex;
+    flex-direction: row;
+    width: 48px;
 }

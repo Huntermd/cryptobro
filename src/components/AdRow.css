@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.AdContainer{
+    width: 50%;
+    height: 50%;
+   
+    margin-bottom: 5px;
+}
+
+.swiperRow{
+    height: 50%;
+    width: 100%;
+    
+}
+.adBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    width:100%;
+    height: 50%;
+    border-bottom: 1px solid grey;
+}
+.author{
+    margin-top: -20px;
+}
+
+.Leftside{
+    width: 50%;
+    height: 50%;
+    
+}
+.titleLeft{
+    width:100%;
+    height: 50%;
+    
+}
+
+.ApiRow{
+    border: 1px solid grey;
+    width: 90%;
+    border-radius: 8px;
+    padding: 10px;
+}
+#Button{
+    border: 1px solid grey;
+    width: 20%;
+    height: 20%;
+    border-radius: 8px; 
+    font-size:large;
+    padding: 10px;
+}

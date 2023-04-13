@@ -1,0 +1,70 @@
+.cryptoCard{
+    display: flex;
+  flex-direction: row;
+ height: auto;
+ width: 55%;
+ border-bottom: 2px solid black;
+}
+
+.cryptoImg{
+    display: flex;
+    justify-content: center;
+ 
+}
+.cryptoImg Img{
+    width: 70%;
+    height: 50%;
+    
+}
+
+.cryptoImgColumn{
+background-color: yellow;
+height: auto;
+width: 15%;
+border:1px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.cryptoInfo{
+   display: flex;
+   flex-direction: column;
+   
+   
+}
+
+.cryptoInfoColumn{
+    height: 100%;
+background-color: pink ;
+width: 90%;
+}
+.cryptoSym{
+    margin-left: 2em ;
+    margin-top: -8px;
+}
+.cryptoPrice{
+display: flex;
+flex-direction: column;
+margin-left: 5px;
+}
+
+.containerPrices{
+margin-left: 5px;
+display: flex;
+flex-direction: row;
+}
+
+.chart{
+    margin-left: 1em;
+    min-width: 130px;
+    flex: 1;
+}
+
+.VolumeMarket{
+    display: flex;
+    flex-direction: row;
+   
+}
