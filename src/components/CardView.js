@@ -6,7 +6,7 @@ export const CardView = (props) => {
     <>
   {props.coins.map((coin) => {
       
-      return (<CryptoCard coin={coin}/>)
+      return (<CryptoCard coin={coin} fav={props.fav} setfav={props.setfav} key={coin.name}/>)
      })}
     </>
   )

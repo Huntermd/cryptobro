@@ -20,7 +20,7 @@ export const RowView = (props) => {
     </div>
     {props.coins.map((coin) => {
       
-      return (<CryptoRow coin={coin} fav={props.fav} setfav={props.setfav}/>)
+      return (<CryptoRow coin={coin} fav={props.fav} setfav={props.setfav}  key={coin.name}/>)
      })}
      
     </>

@@ -17,6 +17,7 @@ function App() {
   const [coinData, setCoinData] = useState(null); 
   const[compact,setCompact] = useState(false);
   const [Fav,setFav] = useState([]);
+  const [firstload, setfirstload] = useState(true);
 
 useEffect(() => {
 
@@ -42,6 +43,9 @@ setFav(newfav);
     let newfav = coin;
     setFav([...Fav, newfav])
   }
+
+  // const jsonData = JSON.stringify(Fav);
+  // localStorage.setItem("CryptobroSavedData", jsonData) ;
   
 }
 
@@ -62,6 +66,30 @@ useEffect(() => {
 
 }, []);
 
+
+
+useEffect(()=> {
+
+  if(firstload) {
+  let savedData = localStorage.getItem("CryptobroSavedData");
+  if(savedData){
+    let favArray = JSON.parse(savedData);
+    setFav(favArray);
+  }else{
+    let starterData = [];
+    const jsonData = JSON.stringify(starterData);
+    localStorage.setItem("CryptobroSavedData", jsonData) ;
+    setFav(starterData);
+  }
+} else {
+  const jsonData = JSON.stringify(Fav);
+  localStorage.setItem("CryptobroSavedData", jsonData) ;
+}
+  
+  
+
+},[Fav, firstload]);
+
 if(coinData === null) {
   return(
     <div>
@@ -81,7 +109,7 @@ if(coinData === null) {
 
    {/* <h2> Top {coinData.length} coins</h2> */}
     <AdRow data = {coinData}/>
-   {compact ? (<CardView coins={coinData} fav={Fav} setfav={setFav}/>): (<RowView coins={coinData} fav={Fav} setfav={ToggleFav}/>)}
+   {compact ? (<CardView coins={coinData} fav={Fav} setfav={ToggleFav}/>): (<RowView coins={coinData} fav={Fav} setfav={ToggleFav}/>)}
   
    
    </div>
